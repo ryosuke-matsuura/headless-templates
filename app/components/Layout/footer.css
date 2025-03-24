@@ -31,3 +31,13 @@
     @apply leading-5;
   }
 }
+
+.footer-001{
+  background-color: black;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+.navpic{
+  margin-top: 1rem;
+}

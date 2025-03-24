@@ -18,10 +18,10 @@ export function Shop({ items }: { items: products.Product[] }) {
       </div>
       {items.length ? (
         <div
-          className="full-w overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10"
+          className="w-4/5 overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10"
           data-testid={testIds.PRODUCT_LIST.CONTAINER}
         >
-          <ul className="grid sm:grid-cols-3 gap-8 grid-flow-row">
+          <ul className="grid sm:grid-cols-5 gap-8 grid-flow-row">
             {items.map((item) => (
               <li
                 key={item._id}
@@ -35,8 +35,8 @@ export function Shop({ items }: { items: products.Product[] }) {
                   <div className="h-auto max-w-full">
                     <WixMediaImage
                       media={item.media?.mainMedia?.image?.url}
-                      height={560}
-                      width={560}
+                      height={280}
+                      width={280}
                       alt={
                         item.media?.mainMedia?.image?.altText || 'main image'
                       }
