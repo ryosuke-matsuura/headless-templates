@@ -1717,7 +1717,7 @@
   resolved "https://registry.npmjs.org/@wix/design-system-tokens/-/design-system-tokens-1.87.1.tgz"
   integrity sha512-njhSBvLC0xl50HyD2xVMFhiFNA+e/rPyHAn1UVhZ93zRxCrRx5OClxNRsSz/DG7bqmDVxZuhWP00pTMvu2X1EA==
 
-"@wix/design-system@^1.161.0":
+"@wix/design-system@^1.161.0", "@wix/design-system@^1.173.1":
   version "1.173.1"
   resolved "https://registry.npmjs.org/@wix/design-system/-/design-system-1.173.1.tgz"
   integrity sha512-59PJ7T4fgkgMwBlRawSTkBLllSfIN+U7P0Ct/UPJUbPuRsz9frSoJXgX8FSC7fMrPDp2fL6YMmDhPUH3V0Uyuw==
@@ -4452,6 +4452,11 @@ immutable@^4.0.0:
   version "4.3.7"
   resolved "https://registry.npmjs.org/immutable/-/immutable-4.3.7.tgz"
   integrity sha512-1hqclzwYwjRDFLjcFxOM5AYkkG0rpFPpr1RLPMEuGczoS7YA8gLhy8SWXYRAA/XwfEHpfo3cw5JGioS32fnMRw==
+
+immutable@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.npmjs.org/immutable/-/immutable-5.1.1.tgz"
+  integrity sha512-3jatXi9ObIsPGr3N5hGw/vWWcTkq6hUYhpQz4k0wLC+owqWi/LiugIw9x0EdNZ2yGedKN/HzePiBvaJRXa0Ujg==
 
 immutable@~3.7.4:
   version "3.7.6"
