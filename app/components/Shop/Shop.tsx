@@ -7,11 +7,17 @@ export function Shop({ items }: { items: products.Product[] }) {
   return (
     <div className="mx-auto">
       <IndexSectionFeaturesWhitePattern11 />
-      <h2 className="text-center pt-20" style={{ fontFamily: '"Noto Serif JP"' }}>Line up</h2>
-      <div className=" text-custom-1 text-center py-8 sm:py-8 h-[150px] sm:h-[150px]" data-testid={testIds.SHOP_PAGE.HEADER}></div>
+      <h2 className="text-center pt-20"
+        style={{ fontFamily: '"Noto Serif JP"' }}
+        >
+        Line up</h2>
+      <div className="text-custom-1 text-center py-8 sm:py-8 h-[150px] sm:h-[150px]"
+        data-testid={testIds.SHOP_PAGE.HEADER}></div>
       {items.length ? (
-        <div className="w-4/5 overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10" data-testid={testIds.PRODUCT_LIST.CONTAINER}>
-          <ul className="grid sm:grid-cols-5 gap-8 grid-flow-row" style={{fontFamily:'"Noto Serif JP", serif'}}>
+        <div className="w-4/5 overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10"
+        data-testid={testIds.PRODUCT_LIST.CONTAINER}>
+          <ul className="grid sm:grid-cols-5 gap-8 grid-flow-row"
+          style={{ fontFamily: '"Noto Serif JP", serif' }}>
             {items.map((item) => (
               <li
                 key={item._id}
