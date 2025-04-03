@@ -28,12 +28,12 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="https://www.wix.com/favicon.ico" />
       </head>
-      <body className="text-black bg-site">
+      <body className="text-black bg-white">
         {process.env.NEXT_PUBLIC_WIX_CLIENT_ID ? (
           <>
             <ClientProvider>
               <Header />
-              <main className="bg-site min-h-[600px]">{children}</main>
+              <main className="bg-white">{children}</main>
               <SidebarUI />
               <NotPremium />
               <LoginModal />

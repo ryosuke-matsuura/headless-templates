@@ -1,27 +1,26 @@
 import { products } from '@wix/stores';
 import testIds from '@app/utils/test-ids';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
+import IndexSectionFeaturesWhitePattern11 from '../../../src/components/features-white-pattern/IndexSectionFeaturesWhitePattern11';
+
 
 export function Shop({ items }: { items: products.Product[] }) {
   return (
     <div className="mx-auto">
+      <IndexSectionFeaturesWhitePattern11 />
+      <h2 className='text-center pt-20' style={{fontFamily: '"Noto Serif JP", serif'}}>Line up</h2>
       <div
-        className="bg-black text-custom-1 text-center py-4 sm:py-10 sm:py-20 h-[450px] sm:h-[520px]"
+        className=" text-custom-1 text-center py-8 sm:py-8 h-[150px] sm:h-[150px]"
         data-testid={testIds.SHOP_PAGE.HEADER}
       >
-        <h1 className="uppercase text-3xl sm:text-6xl">Merch</h1>
-        <p className="text-sm sm:text-base mx-auto px-8 sm:max-w-[50%] my-10">
-          I’m a paragraph. I’m a great space to write about what makes the
-          products special and explain how customers can benefit from these
-          items.
-        </p>
+
       </div>
       {items.length ? (
         <div
-          className="full-w overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10"
+          className="w-4/5 overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10"
           data-testid={testIds.PRODUCT_LIST.CONTAINER}
         >
-          <ul className="grid sm:grid-cols-3 gap-8 grid-flow-row">
+          <ul className="grid sm:grid-cols-5 gap-8 grid-flow-row" style={{fontFamily: '"Noto Serif JP", serif'}}>
             {items.map((item) => (
               <li
                 key={item._id}
@@ -35,8 +34,8 @@ export function Shop({ items }: { items: products.Product[] }) {
                   <div className="h-auto max-w-full">
                     <WixMediaImage
                       media={item.media?.mainMedia?.image?.url}
-                      height={560}
-                      width={560}
+                      height={280}
+                      width={280}
                       alt={
                         item.media?.mainMedia?.image?.altText || 'main image'
                       }
