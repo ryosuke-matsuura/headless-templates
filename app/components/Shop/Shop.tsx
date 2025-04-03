@@ -3,7 +3,6 @@ import testIds from '@app/utils/test-ids';
 import { WixMediaImage } from '@app/components/Image/WixMediaImage';
 import IndexSectionFeaturesWhitePattern11 from '../../../src/components/features-white-pattern/IndexSectionFeaturesWhitePattern11';
 
-
 export function Shop({ items }: { items: products.Product[] }) {
   return (
     <div className="mx-auto">
@@ -13,7 +12,6 @@ export function Shop({ items }: { items: products.Product[] }) {
         className=" text-custom-1 text-center py-8 sm:py-8 h-[150px] sm:h-[150px]"
         data-testid={testIds.SHOP_PAGE.HEADER}
       >
-
       </div>
       {items.length ? (
         <div
