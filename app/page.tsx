@@ -35,5 +35,4 @@ export default async function Home() {
     console.error(err);
   }
   return <Shop items={items} />;
-  
 }
