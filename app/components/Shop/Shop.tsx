@@ -13,8 +13,10 @@ export function Shop({ items }: { items: products.Product[] }) {
       >
         Line up
       </h2>
-      <div className="text-custom-1 text-center py-8 sm:py-8 h-[150px] sm:h-[150px]"
-        data-testid={testIds.SHOP_PAGE.HEADER}></div>
+      <div
+        className="text-custom-1 text-center py-8 sm:py-8 h-[150px] sm:h-[150px]"
+        data-testid={testIds.SHOP_PAGE.HEADER}
+      />
       {items.length ? (
         <div
           className="w-4/5 overflow-hidden mx-auto text-center mt-[-200px] sm:mt-[-130px] px-10"
