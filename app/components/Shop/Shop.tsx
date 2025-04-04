@@ -5,11 +5,12 @@ import IndexSectionFeaturesWhitePattern11 from '../../../src/components/features
 
 export function Shop({ items }: { items: products.Product[] }) {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto" 
+    style={{ fontFamily: '"Noto Serif JP"' }}
+    >
       <IndexSectionFeaturesWhitePattern11 />
       <h2
         className="text-center pt-20"
-        style={{ fontFamily: '"Noto Serif JP"' }}
       >
         Line up
       </h2>
