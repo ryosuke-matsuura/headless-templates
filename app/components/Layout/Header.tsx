@@ -2,6 +2,7 @@ import { CartBag } from '@app/components/CartBag/CartBag';
 import { NavBar } from './NavBar/NavBar';
 import { Login } from '@app/components/Login/Login';
 import testIds from '@app/utils/test-ids';
+import Image from 'next/image';
 
 const Header = () => (
   <>
@@ -11,7 +12,16 @@ const Header = () => (
     >
       <div className="flex px-6 sm:px-14 h-header items-center gap-4 sm:gap-8">
         <h2 className="flex-1">
-          <a href="/"><img className="navpic items-center ml-0 h-14" src="/images/dotpb-logo2.avif" alt="Dot PB Logo" /></a>
+          <a href="/">
+            <Image
+              className="navpic items-center ml-0 h-14"
+              src="/images/dotpb-logo2.avif"
+              alt="Dot PB Logo"
+              width={56}
+              height={56}
+              priority
+            />
+          </a>
         </h2>
         <div>
           <Login />
