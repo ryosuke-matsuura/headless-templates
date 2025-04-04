@@ -6,7 +6,7 @@ import IndexSectionFeaturesWhitePattern11 from '../../../src/components/features
 export function Shop({ items }: { items: products.Product[] }) {
   return (
     <div className="mx-auto" 
-    style={{ fontFamily: '"Noto Serif JP"' }}
+    style={{ fontFamily: 'Noto Serif JP' }}
     >
       <IndexSectionFeaturesWhitePattern11 />
       <h2
@@ -25,7 +25,7 @@ export function Shop({ items }: { items: products.Product[] }) {
         >
           <ul
             className="grid sm:grid-cols-5 gap-8 grid-flow-row"
-            style={{ fontFamily: '"Noto Serif JP", serif' }}
+            style={{ fontFamily: 'Noto Serif JP, serif' }}
           >
             {items.map((item) => (
               <li
