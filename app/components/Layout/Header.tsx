@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { CartBag } from '@app/components/CartBag/CartBag';
+import logo from '../../../src/assets/dotpb-logo2.png';
 import { NavBar } from './NavBar/NavBar';
 import { Login } from '@app/components/Login/Login';
 import testIds from '@app/utils/test-ids';
@@ -14,7 +15,7 @@ const Header = () => (
         <h2 className="flex-1">
           <Image
             className="navpic items-center ml-0 h-14"
-            src="https://static.shuffle.dev/uploads/files/f6/f67a2b31ac340f54e93a30224387548a6c5f5f4e/dotpb-logo2.avif"
+            src={logo}
             alt="Placeholder Image"
             width={56}
             height={56}
