@@ -14,7 +14,8 @@ const Header = () => (
           <div
             className="navpic items-center ml-0 h-14 w-14 bg-no-repeat bg-contain bg-center"
             style={{
-              backgroundImage: 'url(https://static.wixstatic.com/media/a20eb7_2346bbee2fd142a388fcf01ae97325d6~mv2.png/v1/fill/w_95,h_65,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dotpb_logo2.png)'
+              backgroundImage:
+                'url(https://static.wixstatic.com/media/a20eb7_2346bbee2fd142a388fcf01ae97325d6~mv2.png/v1/fill/w_95,h_65,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/dotpb_logo2.png)',
             }}
           />
         </h2>
