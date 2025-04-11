@@ -49,14 +49,14 @@ export function Shop({ items }: { items: products.Product[] }) {
                   {!item.manageVariants && item.stock?.inStock ? (
                     <a
                       data-testid={testIds.PRODUCT_ITEM.BUY_NOW_CTA}
-                      className="btn-main absolute -mt-10 left-0 cursor-pointer"
+                      className="btn-main absolute -mt-10 left-0 cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
                       href={`/api/quick-buy/${item._id}?quantity=1`}
                     >
-                      Buy Now
+                      今すぐ購入する
                     </a>
                   ) : (
                     <button
-                      className="btn-main absolute -mt-10 left-0 cursor-pointer"
+                      className="btn-main absolute -mt-10 left-0 cursor-pointer bg-gradient-to-r from-blue-600 to-blue-800 text-white px-6 py-2 rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300"
                       disabled
                     >
                       Out of Stock
