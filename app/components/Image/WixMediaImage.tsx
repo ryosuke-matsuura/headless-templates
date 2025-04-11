@@ -43,6 +43,7 @@ export function WixMediaImage({
           src={imageUrl}
           quality={90}
           alt={alt}
+          unoptimized
           className={`object-cover w-full ${
             !disableZoom ? 'group-hover:scale-110' : ''
           } transition duration-300 ease-in-out ${className}`}
